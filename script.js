@@ -24,6 +24,12 @@ document.addEventListener('DOMContentLoaded', function() {
             image: "PROFESSIONAL-SERVICES-HUB-FRONT.jpeg",
             description: "Job overview for Client 4..."
         },
+        {
+            client: "Client 5",
+            date: "2024-03-05",
+            image: "PROFESSIONAL-SERVICES-HUB-FRONT.jpeg",
+            description: "Job overview for Client 5..."
+        },
         // Add more jobs as needed
     ];
 
