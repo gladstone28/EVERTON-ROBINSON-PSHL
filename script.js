@@ -1,29 +1,42 @@
 // script.js
 document.addEventListener('DOMContentLoaded', function() {
-    const promotions = [{
-            day: "Day 1",
+    const jobs = [{
+            client: "Client 1",
+            date: "2024-03-01",
             image: "PROFESSIONAL-SERVICES-HUB-FRONT.jpeg",
-            text: "Full payment Warranty Plan..."
-
+            description: "Job overview for Client 1..."
         },
         {
-            day: "Day 2",
+            client: "Client 2",
+            date: "2024-03-02",
             image: "PROFESSIONAL-SERVICES-HUB-BACK.jpeg",
-            text: "Downpayment Plan Offer..."
+            description: "Job overview for Client 2..."
         },
-        // Add more promotions as needed
+        {
+            client: "Client 3",
+            date: "2024-03-03",
+            image: "PROFESSIONAL-SERVICES-HUB-FRONT.jpeg",
+            description: "Job overview for Client 3..."
+        },
+        {
+            client: "Client 4",
+            date: "2024-03-04",
+            image: "PROFESSIONAL-SERVICES-HUB-FRONT.jpeg",
+            description: "Job overview for Client 4..."
+        },
+        // Add more jobs as needed
     ];
 
-    const container = document.getElementById('promotion-container');
+    const container = document.getElementById('job-container');
 
-    promotions.forEach(promotion => {
+    jobs.forEach(job => {
         const card = document.createElement('div');
         card.className = 'card';
         card.innerHTML = `
-            <img src="${promotion.image}" alt="Promotion Image">
+            <img src="${job.image}" alt="Job Image">
             <div class="card-content">
-                <h3>${promotion.day}</h3>
-                <p>${promotion.text}</p>
+                <h3>${job.client} - ${job.date}</h3>
+                <p>${job.description}</p>
             </div>
         `;
         container.appendChild(card);
