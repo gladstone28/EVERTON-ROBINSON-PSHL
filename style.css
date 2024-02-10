@@ -1,0 +1,44 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.promotion-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
