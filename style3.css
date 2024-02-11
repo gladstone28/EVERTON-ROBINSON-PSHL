@@ -1,0 +1,103 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4; /* Light background to ease reading */
+}
+
+header {
+    background-color: #007bff; /* Primary brand color */
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Custom styles for main content */
+main h1, main h2 {
+    color: #333; /* Dark grey for headings */
+}
+
+main p, main li {
+    line-height: 1.6; /* Improve readability */
+}
+
+main ul {
+    list-style-type: disc; /* Add bullets to list items */
+    margin-left: 20px; /* Proper indentation for lists */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column; /* Stack nav items under each other */
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px; /* Add space between stacked nav items */
+    }
+
+    main {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* Full width cards for very small screens */
+    }
+
+    footer {
+        position: relative; /* Adjust footer positioning on small screens */
+    }
+}
+
+/* Branding and color customization */
+:root {
+    --primary-color: #007bff; /* Primary brand color */
+    --secondary-color: #333; /* Secondary color for text and footer */
+    --background-color: #f4f4f4; /* Background color */
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--secondary-color);
+}

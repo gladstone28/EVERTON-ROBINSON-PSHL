@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             client: "Client 3",
             date: "2024-03-03",
-            image: "PROFESSIONAL-SERVICES-HUB-FRONT.jpeg",
+            image: "professional-services-scan.jpg",
             description: "Job overview for Client 3..."
         },
         {
