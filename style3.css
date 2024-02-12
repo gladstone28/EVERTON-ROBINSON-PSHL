@@ -1,14 +1,17 @@
 /* Base styles */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f4f4f4; /* Light background to ease reading */
+    background-color: #f4f4f4;
+    /* Light background to ease reading */
 }
 
 header {
-    background-color: #007bff; /* Primary brand color */
+    background-color: #007bff;
+    /* Primary brand color */
     color: #ffffff;
     padding: 10px 20px;
 }
@@ -43,51 +46,68 @@ footer {
     width: 100%;
 }
 
+
 /* Custom styles for main content */
-main h1, main h2 {
-    color: #333; /* Dark grey for headings */
+
+main h1,
+main h2 {
+    color: #333;
+    /* Dark grey for headings */
 }
 
-main p, main li {
-    line-height: 1.6; /* Improve readability */
+main p,
+main li {
+    line-height: 1.6;
+    /* Improve readability */
 }
 
 main ul {
-    list-style-type: disc; /* Add bullets to list items */
-    margin-left: 20px; /* Proper indentation for lists */
+    list-style-type: disc;
+    /* Add bullets to list items */
+    margin-left: 20px;
+    /* Proper indentation for lists */
 }
 
+
 /* Responsive design adjustments */
+
 @media (max-width: 768px) {
     header nav ul {
-        flex-direction: column; /* Stack nav items under each other */
+        flex-direction: column;
+        /* Stack nav items under each other */
         align-items: center;
     }
-
     header nav ul li {
-        margin-bottom: 10px; /* Add space between stacked nav items */
+        margin-bottom: 10px;
+        /* Add space between stacked nav items */
     }
-
     main {
-        padding: 10px; /* Adjust padding for smaller screens */
+        padding: 10px;
+        /* Adjust padding for smaller screens */
     }
 }
 
 @media (max-width: 480px) {
     .card {
-        width: 100%; /* Full width cards for very small screens */
+        width: 100%;
+        /* Full width cards for very small screens */
     }
-
     footer {
-        position: relative; /* Adjust footer positioning on small screens */
+        position: relative;
+        /* Adjust footer positioning on small screens */
     }
 }
 
+
 /* Branding and color customization */
+
 :root {
-    --primary-color: #007bff; /* Primary brand color */
-    --secondary-color: #333; /* Secondary color for text and footer */
-    --background-color: #f4f4f4; /* Background color */
+    --primary-color: #ff9100;
+    /* Primary brand color */
+    --secondary-color: #333;
+    /* Secondary color for text and footer */
+    --background-color: #f07e7e;
+    /* Background color */
 }
 
 body {
@@ -100,4 +120,136 @@ header {
 
 footer {
     background-color: var(--secondary-color);
+}
+
+
+/* Enhancements for main content */
+
+main {
+    max-width: 1200px;
+    /* Limit content width for readability */
+    margin: auto;
+    /* Center content */
+    background-color: #ffffff;
+    /* Background color for content area */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    padding: 30px;
+    /* Spacious padding for content */
+    border-radius: 8px;
+    /* Soften edges */
+    margin-bottom: 30px;
+    /* Space before the footer */
+}
+
+
+/* Section styling */
+
+main section {
+    margin-bottom: 20px;
+    /* Space between sections */
+}
+
+
+/* Headings */
+
+main h1,
+main h2 {
+    color: #cf1010;
+    /* Brand color for headings */
+    margin-top: 0;
+}
+
+
+/* Paragraphs */
+
+main p {
+    font-size: 1rem;
+    /* Standard size for readability */
+    color: #666;
+    /* Soft color for reading comfort */
+    margin-bottom: 1em;
+}
+
+
+/* Lists */
+
+main ul {
+    padding-left: 20px;
+    /* Proper indentation */
+}
+
+main ul li {
+    margin-bottom: 0.5em;
+    /* Space between list items */
+}
+
+
+/* Links */
+
+main a {
+    color: #007bff;
+    /* Brand color for links */
+    text-decoration: none;
+    /* Cleaner look */
+}
+
+main a:hover {
+    text-decoration: underline;
+    /* Indicate clickable links */
+}
+
+
+/* Buttons (if any) */
+
+button {
+    background-color: #007bff;
+    /* Brand color */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* Darker shade on hover */
+}
+
+
+/* Images */
+
+main img {
+    max-width: 100%;
+    /* Ensure images are responsive */
+    height: auto;
+    display: block;
+    /* Remove bottom space */
+    margin-bottom: 1em;
+    /* Space after images */
+    border-radius: 8px;
+    /* Soften edges */
+}
+
+
+/* Blockquotes */
+
+main blockquote {
+    padding: 20px;
+    /* Padding inside blockquote */
+    background-color: #f9f9f9;
+    /* Light background */
+    border-left: 5px solid #007bff;
+    /* Brand color highlight */
+    margin: 20px 0;
+    /* Space around blockquote */
+    font-style: italic;
+    /* Italicize text */
+}
+
+main blockquote p {
+    margin: 0;
+    /* Remove default margin */
 }
