@@ -253,3 +253,35 @@ main blockquote p {
     margin: 0;
     /* Remove default margin */
 }
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place it 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* No border */
+    outline: none;
+    /* Remove outline */
+    background-color: #0073e6;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #e7a7a7;
+    /* Add a darker background on hover */
+}
